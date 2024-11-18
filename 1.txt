@@ -1,0 +1,3 @@
+javac -cp "C:\Users\HP\OneDrive\Desktop\jdbc\mysql-connector-j-9.1.0.jar" CreateDB.java
+
+java -cp ".;C:\Users\HP\OneDrive\Desktop\jdbc\mysql-connector-j-9.1.0.jar" CreateDB
