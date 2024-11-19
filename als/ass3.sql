@@ -1,0 +1,46 @@
+-- ddl
+create database ass3;
+use ass3;
+CREATE TABLE DEPARTMENT ( DEPTNO INT NOT NULL, 
+DNAME VARCHAR(10),
+LOC VARCHAR(4),
+PINCODE INT NOT NULL
+);
+
+drop table department; -- drop delete table
+
+-- modify
+
+ALTER TABLE DEPARTMENT
+ ADD MANAGER VARCHAR(20);
+ 
+ALTER TABLE DEPARTMENT
+ drop MANAGER ;
+ 
+ INSERT INTO DEPARTMENT (DEPTNO, DNAME, LOC, PINCODE)
+VALUES
+(101, 'HR', 'NYC', 10001),
+(102, 'Finance', 'LA', 90001),
+(103, 'IT', 'SF', 94105),
+(104, 'Marketing', 'CHI', 60601),
+(105, 'Operations', 'BOS', 02108),
+(106, 'Research', 'SEA', 98101);
+
+select * from DEPARTMENT;
+-- update record
+
+SET SQL_SAFE_UPDATES = 0;
+
+
+UPDATE DEPARTMENT 
+SET LOC = 'LA'
+WHERE DEPTNO = 101;
+
+DELETE FROM DEPARTMENT WHERE DEPTNO = 101;
+
+ 
+ 
+
+
+
+
